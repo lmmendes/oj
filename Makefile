@@ -4,8 +4,8 @@ run:
 	go run .
 
 build:
-	go build
+	go build -o bin/oj .
 
 release:
-	go build -ldflags "-s -w" .
+	go build -ldflags "-s -w" -o bin/oj .
 	chmod u+x oj
